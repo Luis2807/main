@@ -19,7 +19,7 @@ while True:
     7) Seno
     8) Coseno
     9) Tangente
-    O) apagar calculadora 
+    00) apagar calculadora 
     """)
     opcion = int(input("Elige una opción: ") )     
 
@@ -61,13 +61,13 @@ while True:
         n1 = int(input("Introduce los radianes: ") )
       
         print(" ")
-        print("El seno de {} es {}".format(n1, math.sin(n1)))
+        print("El coseno de {} es {}".format(radianes, math.cos(radianes)))
     elif opcion == 9:
         n1 = float(input("Introduce tu primer número: ") )
-        n2 = float(input("Introduce tu segundo número: ") )
+        
         print(" ")
-        print("RESULTADO: de la tangente  es",n1,"**",n2,"es igual a",n1**n2)    
-    elif opcion == "O":
+        print("La tangente de {} es {}".format(radianes, math.tan(radianes)))    
+    elif opcion == 00:
         break
     else:
         print("Opción incorrecta")
